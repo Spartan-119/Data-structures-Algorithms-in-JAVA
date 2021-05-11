@@ -1,6 +1,6 @@
 public class Stack {
-    int stck[] = new int[10];
-    int top_of_stack;
+    private int stck[] = new int[10];
+    private int top_of_stack;
 
     Stack() {
         top_of_stack = -1;
