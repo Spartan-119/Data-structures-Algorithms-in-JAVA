@@ -1,13 +1,14 @@
 public class Stack {
-    private int stck[] = new int[10];
+    private int stck[];
     private int top_of_stack;
 
-    Stack() {
+    Stack(int size) {
+        stck = new int[size];
         top_of_stack = -1;
     }
 
     void push(int item) {
-        if (top_of_stack == 9) {
+        if (top_of_stack == stck.length - 1) {
             System.out.println("Stack is full!");
         }
         else {

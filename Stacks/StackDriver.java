@@ -1,6 +1,6 @@
 public class StackDriver {
     public static void main (String [] args) {
-        Stack s1 = new Stack();
+        Stack s1 = new Stack(10);
 
         for(int i = 1; i <= 10; i++){
             s1.push(i);
